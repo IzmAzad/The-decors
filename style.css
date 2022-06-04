@@ -1,3 +1,8 @@
+.wrapper {
+  max-width: 1000px;
+  max-height: 1000px;
+}
+
 .head {
   width: 1500px;
   height: 83px;
@@ -69,9 +74,11 @@
   height: 23px;
 }
 .body2 {
+  max-height: 1000px;
 }
 .body__row {
   display: flex;
+  max-height: 1200px;
 }
 .body__backgroud {
 }
@@ -102,16 +109,15 @@
 }
 .body__container {
   max-width: 302px;
-  height: 982px;
+  max-height: 800px;
   background: #000000;
   box-shadow: 120px 0px 24px 318px #000000;
 }
 .body__images img {
   /* position: absolute; */
-  width: 1823px;
-  height: 1200px;
-  left: 476px;
-  top: 14px;
+}
+.body__images {
+  max-height: 1000px;
 }
 /* @media screen and (max-width: 1383px) {
   .container {
@@ -156,4 +162,7 @@
   */
 .head__list {
   font-size: 20px;
+}
+body {
+  background-color: black;
 }
