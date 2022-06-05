@@ -9,13 +9,14 @@
   background: rgba(105, 105, 105, 0.32);
   backdrop-filter: blur(83px);
   /* Note: backdrop-filter has minimal browser support */
+  height: 110px;
 }
 .head__row {
   display: flex;
   justify-content: space-between;
 }
 .head__title {
-  width: 218px;
+  width: px;
   height: 37px;
   font-family: "Italiana";
   font-style: normal;
@@ -28,6 +29,7 @@
 }
 .head__list li {
   display: inline-block;
+  font-size: 20px;
 }
 .head__input {
   border-radius: 55px;
@@ -84,16 +86,14 @@
 }
 .nav__block {
   width: 302px;
-  height: 650px;
+  height: 1650px;
 
   background: #000000;
   box-shadow: 120px 0px 24px 318px #000000;
 }
 .nav__images {
-  width: 1823px;
-  height: 782px;
-  left: 476px;
-  top: 14px;
+  max-width: 1823px;
+  height: 1650px;
 
   background: linear-gradient(
       90.9deg,
@@ -101,4 +101,32 @@
       rgba(0, 0, 0, 0) 65.53%
     ),
     url(.jpg);
+}
+.nav__images img {
+  height: 1950px;
+  max-width: 1823px;
+}
+/* в данном случае чтобы растянуть изображение по высоте нужно увеличить высоту блока с изображением и само изображение */
+
+@media (max-width: 1384px) {
+  .container {
+    max-width: 1370px;
+    /* маленький манитор */
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 970px;
+    /* контент на планшетах 992 */
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .head__list li {
+    font-size: 18px;
+  }
 }
