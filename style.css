@@ -1,170 +1,104 @@
-.wrapper {
-  max-width: 1000px;
-  max-height: 1000px;
-}
-
-.head {
-  width: 1800px;
-  height: 83px;
-  left: 107px;
-  top: 30px;
-  background: rgba(105, 105, 105, 0.32);
-  backdrop-filter: blur(83px);
-  color: #696969 32%;
+.wraper {
+  min-height: 100%;
 }
 .container {
-  max-width: 1383px;
-  height: 83px;
-  /* ограничивает ширину контентной части в дааном случае в head ,а в body ограничивает ширнину контентной часи body__container */
+  max-width: 1384px;
+  overflow: hidden;
 }
-
+.head {
+  background: rgba(105, 105, 105, 0.32);
+  backdrop-filter: blur(83px);
+  /* Note: backdrop-filter has minimal browser support */
+}
 .head__row {
   display: flex;
   justify-content: space-between;
 }
 .head__title {
-  /* padding-right: 390px; */
-  padding-left: 20px;
+  width: 218px;
+  height: 37px;
   font-family: "Italiana";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  /* line-height: 47px; */
+  line-height: 47px;
   letter-spacing: 0.08em;
-  padding-bottom: 30px;
-  margin-bottom: 50px;
-  color: white;
+
+  color: #ffffff;
 }
 .head__list li {
   display: inline-block;
-  /* padding-bottom: 50px; */
-  /* padding-left: 30px; */
-  text-decoration: none;
-  padding-right: 50px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.08em;
-
-  color: white;
 }
 .head__input {
-  padding-top: 30px;
-  /* padding-left: 310px; */
-  border-radius: 50%;
+  border-radius: 55px;
   position: relative;
+  right: 30px;
 }
-.head__images img {
-  position: absolute;
-  left: 1320px;
-  top: 30px;
-  right: 50px;
-  padding-bottom: 30px;
+.head__images {
+  /* position: absolute; */
+  left: 1300px;
+  padding-right: 10px;
+}
+.put {
+  border-radius: 55px;
+  padding-right: 30px;
 }
 .head__list a {
   text-decoration: none;
+  padding-right: 30px;
   color: white;
-  padding-bottom: 30px;
 }
-.put {
-  border-radius: 20px;
-  width: 214px;
-  height: 23px;
-}
-.body2 {
-  max-height: 1000px;
-}
-.body__row {
+.nav__row {
   display: flex;
-  min-height: 2400px;
 }
-.body__backgroud {
+.nav__body {
 }
-.body__title {
+.nav__title {
+  width: 461px;
+  height: 151px;
+  padding-top: 10px;
+  padding-left: 50px;
+
   font-family: "Italiana";
   font-style: normal;
   font-weight: 400;
   font-size: 128px;
   line-height: 151px;
-  /* identical to box height */
-  color: #fff;
 
   letter-spacing: 0.08em;
+
+  color: #ffffff;
 }
-.body__text {
+.nav__text {
   width: 380px;
   height: 87px;
+  padding-left: 70px;
+  padding-top: 60px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  left: 110px;
-  top: 410px;
-  position: absolute;
 
   color: #ffffff;
 }
-.body__container {
-  max-width: 302px;
-  min-height: 2200px;
+.nav__block {
+  width: 302px;
+  height: 650px;
+
   background: #000000;
   box-shadow: 120px 0px 24px 318px #000000;
 }
-.body__images img {
-  /* position: absolute; */
-  max-height: 2000px;
-}
-.body__images {
-  max-height: 2000px;
-}
-/* @media screen and (max-width: 1383px) {
-  .container {
-    max-width: 967px;
-    max-height: 500px;
-  }
-}
-@media screen and (max-width: 1383px) {
-  .container {
-    max-width: 967px;
-    max-height: 500px;
-  }
-}
-@media screen and (max-width: 1383px) {
-  .container {
-    max-width: 967px;
-    max-height: 500px;
-  }
-}
-@media screen and (max-width: 1383px) {
-  .container {
-    max-width: 967px;
-    max-height: 500px;
-  }
-}
-@media screen and (max-width: 967px) {
-  .container {
-    max-width: 896px;
-  }
-/* } *
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: none;
-  }
-}
-@media screen and (max-width: 767px) {
-  .body__text {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  */
-.head__list {
-  font-size: 20px;
-}
-.body__container {
-  max-width: 1900px;
-  max-height: 1000px;
+.nav__images {
+  width: 1823px;
+  height: 782px;
+  left: 476px;
+  top: 14px;
+
+  background: linear-gradient(
+      90.9deg,
+      rgba(0, 0, 0, 0.63) 0.77%,
+      rgba(0, 0, 0, 0) 65.53%
+    ),
+    url(.jpg);
 }
